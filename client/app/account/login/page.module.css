@@ -1,0 +1,385 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    align-items: flex-start;
+    color: var(--main-font-color)
+  }
+  .mainloading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    align-items: center;
+    color: var(--main-font-color)
+  }
+ 
+
+  .main a{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--main-font-color);
+    text-decoration: none;
+  }
+  .forgotpassword h5 {
+    font-weight: 300;
+    padding-right: 0.5rem;
+  }
+  .forgotpassword {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.7rem;
+
+  }
+  
+  .mainloadingmessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--main-font-color)
+  }
+  
+  .changedivwrapper {
+    margin: 3.1rem;
+    position: relative;
+    z-index: 4;
+  
+  }
+  .changedivwrapper h4{
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  .changediv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+  }
+  .mainwrapplabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .inputlabelwrapp {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  
+  }
+  .changediv label {
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  
+  }
+  .changedivwrapper h3{
+    font-weight: 300;
+    margin-top: 2rem;
+    
+  }
+  .changediv input {
+    height: 3rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    border: 0.4px solid #aaa7a74d;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--main-font-color);
+    width: 8.5rem;
+  }
+  .passwordWrapper input{
+    position: relative;
+
+  }
+  .passwordWrapper .icon{
+    position: relative;
+    bottom: 3rem;
+    left: 7rem;
+    cursor: pointer;
+    color: var(--main-font-color);
+  }
+  
+
+  .emailinput{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .emailinput input {
+    width: 19rem;
+  }
+
+  .buttonwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  
+  }
+  
+  .main button {
+    border: 2px solid white;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--main-font-color);
+    margin: 1rem;
+    min-width: 5rem;
+  }
+
+  .main button:active {
+    transform: scale(0.95);
+  }
+  .squareinput {
+    width: 3rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  .mainwrapplabeltwo {
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  
+  }
+  .errormessage {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .basicmessage {
+    color: var(--main-font-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .squarewrapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  
+  .ovalblurtwo {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: radial-gradient(ellipse at center, rgba(102, 246, 255) 4%, rgba(102, 246, 255,0.2) 25%, rgba(102, 246, 255,0) 100%);
+    filter: blur(100px);
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+.line {
+    border-top: 1px solid #aaa7a74d;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.sociallogindiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialbutton {
+        border: 2px solid white;
+        padding: 0.7rem;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--main-font-color);
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 13rem;
+      }
+
+.socialbutton h5 {
+    margin-left: 0.4rem;
+    font-weight: 300;
+}
+    
+.socialbutton:active {
+        transform: scale(0.95);
+      }
+
+  
+  @media screen and (max-width: 428px) {
+    .changedivwrapper {
+        margin-left: 0rem;
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .changediv {
+        display: flex;
+        flex-direction: column;
+    }
+    .changediv input {
+        width: 9.7rem;
+        
+    }
+
+    .emailinput {
+      margin-right: 0rem;
+      display: flex;
+      flex-direction: column;
+  }
+  .emailinput input{
+    width: 98%;
+}
+.passwordWrapper .icon{
+  position: relative;
+  bottom: 3rem;
+  left: 8rem;
+  cursor: pointer;
+  color: var(--main-font-color);
+}
+}
+
+@media screen and (max-width: 375px) {
+  .mainwrapplabel {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+
+  }
+  .changedivwrapper {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      margin-right: 0rem;
+      width: 23.4rem;
+      
+  }
+  .changedivwrapper h4 {
+    padding-left: 1.5rem;
+    
+}
+.changedivwrapper h3 {
+  padding-left: 1.5rem;
+  
+}
+  .changediv {
+      display: flex;
+      flex-direction: column;
+      padding-right: 2.1rem;
+
+  }
+  .changediv input {
+    width: 100%;
+    padding-right: 1.5rem;
+}
+.mainwrapplabel {
+  width: 100%;
+}
+.inputlabelwrapp {
+  width: 100%;
+
+}
+
+.emailinput input{
+  width: 100%;
+
+}
+
+.passwordWrapper .icon{
+position: relative;
+bottom: 3rem;
+left: 17.5rem;
+cursor: pointer;
+color: var(--main-font-color);
+}
+.buttonwrapper {
+  margin-left: 2.5rem;
+ }
+.forgotpassword {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+.line h4{
+  padding-left: 0rem;
+
+}
+}
+
+@media screen and (max-width: 354px) {
+  .main {
+    width: 100%;
+    padding-right: 0rem;
+    margin-right: 0rem;
+
+  }
+  .merz {
+    width: 100%;
+    padding-right: 1.8rem;
+  }
+  .changedivwrapper {
+    width: 100%;
+    
+}
+.passwordWrapper .icon{
+  position: relative;
+  bottom: 3rem;
+  left: 14.6rem;
+  cursor: pointer;
+  color: var(--main-font-color);
+  
+  }
+  .changediv {
+    padding-right: 0rem;
+    margin-right: 0rem;
+    width: 100%;
+  }
+  .mainwrapplabel {
+    width: 100%;
+  }
+  .sociallogindiv {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .line h4{
+    padding-left: 2rem;
+  
+  }
+  
+}

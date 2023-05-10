@@ -1,0 +1,96 @@
+.successmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--main-font-color);
+}
+.successmain a {
+  text-decoration: none;
+
+}
+.stepper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    position: relative;
+    z-index: 4;
+
+  }
+  .imgwrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .nameof {
+    padding-top: 1rem;
+  }
+  .nameoftow {
+    padding-top: 1rem;
+    color: var(--main-font-color);
+  }
+  .nameofthree {
+    padding-top: 1rem;
+    color: var(--main-font-color);
+    position: relative;
+    right: 0.9rem;
+  }
+  .btn {
+    padding: 0.92rem;
+    width: 12rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: linear-gradient(to bottom right, #66F6FF, #143DA9);
+    color: var(--main-font-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+  }
+  .ovalblur {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: radial-gradient(ellipse at right, rgba(102, 246, 255) 15%, rgba(102, 246, 255,0.2) 15%, rgba(102, 246, 255,0) 100%);
+    filter: blur(100px);
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  @media screen and (max-width: 650px) {
+    .successmain h3 {
+      font-size: 0.9rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .successmain h1 {
+      font-size: 1.6rem;
+    }
+
+    .stepper {
+      padding: 0rem;
+      padding-left: 1rem;
+      margin: 0rem;
+      width: 90%;
+      justify-content: space-evenly;
+
+    }
+    .btn {
+      width: 100%;
+      position: relative;
+      z-index: 5;
+  }
+  }

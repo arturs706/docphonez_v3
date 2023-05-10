@@ -1,0 +1,135 @@
+.swiperdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    display: row;
+    min-height: 80vh;
+
+}
+
+.embla {
+    overflow: hidden;
+    width: 80rem;
+}
+
+.slide {
+    flex: 0 0 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide h4 {
+    font-size: 0.8rem;
+    color: #ffffff;
+    padding-top: 2rem;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.emblacontainer {
+    display: flex;
+
+}
+
+.arrowleftsmall {
+    margin-bottom: 4rem;
+    cursor: pointer;
+
+}
+.arrowrightsmall {
+    margin-bottom: 4rem;
+    cursor: pointer;
+
+}
+
+
+  @media screen and (max-width: 1338px) {
+    .embla {
+        width: 70rem
+    }
+  }
+  @media screen and (max-width: 1373px) {
+    .embla {
+        width: 60rem;
+    }
+  }
+  @media screen and (max-width: 1070px) {
+    .embla {
+        width: 55rem;
+    }
+    
+  }
+  @media screen and (max-width: 981px) {
+    .embla {
+        width: 50rem;
+    }
+  }
+  @media screen and (max-width: 903px) {
+    .embla {
+        width: 45rem;
+    }
+    .slide {
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 829px) {
+    .embla {
+        width: 40rem;
+    }
+  }
+  @media screen and (max-width: 752px) {
+    .embla {
+        width: 35rem;
+    }
+  }
+  @media screen and (max-width: 664px) {
+    .embla {
+        width: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .embla {
+        width: 25rem;
+    }
+    .slide {
+        flex: 0 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+  @media screen and (max-width: 574px) {
+    .embla {
+        width: 25rem;
+    }
+}
+
+    @media screen and (max-width: 490px) {
+        .embla {
+            width: 20rem;
+        }
+    }
+    @media screen and (max-width: 428px) {
+        .embla {
+            width: 17rem;
+        }
+    }
+        @media screen and (max-width: 400px) {
+            .embla {
+                width: 15rem;
+                background-color: aqua;
+            }
+  }

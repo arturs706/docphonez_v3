@@ -1,0 +1,438 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    align-items: center;
+  }
+  .mainloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--main-font-color)
+  }
+  
+  .main a {
+    text-decoration: none;
+  }
+  .errormessage {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 25rem;
+}
+  .successmessage {
+    color: rgb(21, 250, 21);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 25rem;
+  }
+
+
+  .divleft {
+    min-width: 15.8rem;
+    height: 28rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    margin: 3.2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    color: var(--main-font-faded);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+  
+  .divright {
+  width: 80%; 
+  height: 100vh;
+  margin: 3.2rem;
+  color: var(--main-font-color);
+  }
+  
+  .divright h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    color: var(--main-font-color);
+    text-align: center;
+  }
+  
+  .profileH {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--main-font-color);
+    
+  }
+  
+  .divwrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.1rem;
+    cursor: pointer;
+  
+  }
+  
+  .divwrap img {
+    margin: 0.8rem;
+  }
+  .activeh5 {
+    color: var(--main-font-color);
+  }
+  .inactiveh5 {
+    color: var(--main-font-faded);
+  }
+
+  .ovalblur {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: radial-gradient(ellipse at right, rgba(102, 246, 255) 15%, rgba(102, 246, 255,0.2) 15%, rgba(102, 246, 255,0) 100%);
+    filter: blur(100px);
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  .changediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+
+  }
+  .wrappinput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+
+  }
+  .changediv label {
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .changediv input {
+    height: 3rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    border: 0.4px solid #aaa7a74d;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--main-font-color)
+  }
+  .changediv input:focus {
+    margin-left: 0.1rem;
+   
+  }
+  .main button {
+    border: 2px solid white;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--main-font-color);
+    position: relative;
+    z-index: 4;
+  }
+  .main button:active {
+    transform: scale(0.95);
+  }
+  .buttontosave {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+  }
+  .divright {
+    width: 80%; 
+    height: 100vh;
+    margin: 3.2rem;
+    color: var(--main-font-color);
+    }
+
+@media screen and (min-width: 1001px) {
+  .divright {
+    overflow: auto;
+    }
+  .divright::-webkit-scrollbar {
+    display: none;
+  }
+  
+}
+  
+@media screen and (max-width: 1000px) {
+  .main {
+    display: inline-block ;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--main-color);
+    
+  }
+  
+  .divleft {
+  display: flex;
+  min-width: 0rem;
+  width: 90%;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  flex-direction: row;
+  height: 10%;
+  align-items: center;
+  }
+  
+  .divright {
+  width: 80%;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  color: var(--main-font-color);
+  height: 90%;
+  }
+  
+  .divright h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    color: var(--main-font-color);
+    text-align: center;
+  }
+  
+  .profileH {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1.2rem;
+    border-bottom: none;
+    color: var(--main-font-color);
+    
+  }
+  
+  .divwrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.1rem;
+  }
+  
+  .divwrap img {
+    margin: 0.2rem;
+  }
+  .divwrap {
+    display: flex;
+    width: 9.9rem;
+    margin-top: 0.1rem;
+  }}
+
+  @media screen and (max-width: 970px) {
+    .divwrap {
+      width: 9.2rem;
+    }
+    .divleft {
+      width: 89%;
+      }
+  }
+  @media screen and (max-width: 935px) {
+    .divwrap {
+      width: 9rem;
+    }
+  }
+  @media screen and (max-width: 935px) {
+    .divwrap {
+      width: 8.8rem;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .divwrap {
+      width: 8.5rem;
+    }
+    .divleft {
+      width: 88%;
+      }
+  }
+  @media screen and (max-width: 900px) {
+    .divwrap {
+      width: 8.2rem;
+    }
+  }
+  @media screen and (max-width: 873px) {
+    .divwrap {
+      width: 8rem;
+    }
+  }
+  @media screen and (max-width: 810px) {
+    .divwrap {
+      width: 7.2rem;
+    }
+    .divleft {
+      width: 86%;
+      }
+  }
+  @media screen and (max-width: 770px) {
+    .divwrap h5{
+      display: none;
+    }
+    .divleft {
+      width: 82%;
+      }
+    .divwrap {
+      width: 6.2rem;
+      justify-content: space-evenly;
+    }
+  }
+  @media screen and (max-width: 725px) {
+    .divleft {
+      width: 85%;
+      }
+    .divwrap {
+      width: 6rem;
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 695px) {
+    .divwrap {
+      width: 5.5rem;
+    }
+  }
+
+  @media screen and (max-width: 645px) {
+    .divwrap {
+      width: 5rem;
+    }
+    .divleft {
+      width: 83%;
+      }
+
+  }
+  @media screen and (max-width: 645px) {
+    .divwrap {
+      width: 4.5rem;
+    }
+    .divleft {
+      width: 83%;
+      }
+  }
+  @media screen and (max-width: 563px) {
+    .divwrap {
+      width: 4.2rem;
+    }
+    .divleft {
+      width: 82%;
+      }
+  }
+
+  @media screen and (max-width: 526px) {
+    .divwrap {
+      width: 4rem;
+    }
+  }
+  @media screen and (max-width: 508px) {
+    .divwrap {
+      width: 3.8rem;
+    }
+  }
+  @media screen and (max-width: 490px) {
+    .divwrap {
+      width: 3.6rem;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    .divwrap {
+      width: 3.4rem;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .divwrap {
+      width: 3.2rem;
+    }
+  }
+
+  @media screen and (max-width: 428px) {
+    .divleft {
+      width: 88%;
+      margin-top: 1rem;
+      margin-left: 1.3rem;
+      position: relative;
+      z-index: 4;
+      }
+      .divwrap {
+        width: 3rem;
+      }
+      .divwrap img {
+        margin: 1rem;
+      }
+      .divright{
+        margin: 0rem;
+        width: 100%;
+        padding-right: 1.5rem;
+      
+
+      }
+      .divright h2 {
+        padding-left: 1.4rem;
+
+      }
+      .messagerightdiv {
+        padding-left: 1.4rem;
+
+      }
+      .changediv h5{
+        padding-left: 1.4rem;
+        max-width: 10rem;
+
+      }
+      .wrappinput {
+        padding-left: 1.4rem;
+
+      }
+   
+
+  
+  }
+
+  @media screen and (max-width: 428px) {
+
+    .wrappinput {
+      padding-left: 1.4rem;
+      padding-right: 1rem;
+    }
+  }
+  

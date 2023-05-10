@@ -1,0 +1,16 @@
+:root {
+  --main-color: #000235;
+  --main-font-color: #f5f5ff;
+  --main-font-faded: #ffffff6f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

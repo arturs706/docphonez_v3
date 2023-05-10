@@ -1,0 +1,87 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:13.2
+    restart: always
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    networks:
+      - app_network
+
+  pg-admin:
+    image: dpage/pgadmin4:latest
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+      - PGADMIN_LISTEN_PORT = 5050
+    ports:
+      - 5050:80
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+    
+
+volumes:
+  data:
+  stripe-data:
+
+
+  # server:
+  #   build:
+  #     context: ./server
+  #     dockerfile: Dockerfile
+  #   container_name: server
+  #   restart: always
+  #   ports:
+  #     - 10000:10000
+  #   volumes:
+  #     - stripe-data:/usr/src/server/data
+  #     - ./server:/usr/src/server
+  #     - /usr/src/server/node_modules
+  #   networks:
+  #     - app_network
+  #   environment:
+  #     - STRIPE_PUBLISHABLE_KEY=${STRIPE_PUBLISHABLE_KEY}
+  #     - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+  #     - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+  #     - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
+  #     - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
+  #     - RESET_PASSWORD_SECRET=${RESET_PASSWORD_SECRET}
+  #     - EMAIL_VERIFICATION_SECRET=${EMAIL_VERIFICATION_SECRET}
+  #     - EMAIL_UPDATE_SECRET=${EMAIL_UPDATE_SECRET} 
+  #     - SMTP_USERNAME=${SMTP_USERNAME}
+  #     - SMTP_PASSWORD=${SMTP_PASSWORD}
+  #     - DATABASE_URL_HOST=${DATABASE_URL_HOST}
+  #     - CLOUDINARY_URL=${CLOUDINARY_URL}
+  #     - ACCOUNT_SID=${ACCOUNT_SID}
+  #     - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+  #     - TWILIO_PHONE_NUMBER=${TWILIO_PHONE_NUMBER}
+
+  # nextjs-app:
+  #   build:
+  #     context: ./client
+  #     dockerfile: Dockerfile
+  #   container_name: nextjs-app
+  #   env_file:
+  #     - .env.production
+  #   ports:
+  #     - 3000:3000
+  #   networks:
+  #     - app_network
+
+
+
+
+
+
+
+

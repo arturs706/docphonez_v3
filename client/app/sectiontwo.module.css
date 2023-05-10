@@ -1,0 +1,76 @@
+
+.sectiontwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000235;
+  }
+  .sectiontwodiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectiontwodiv h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .sectiontwodiv img {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+
+  .rotateonhover:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .sectiontwodiv h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 564px) {
+    .sectiontwodiv h1 {
+      font-size: 2rem;
+    }
+  }
+  
+
+  
+  /* .ovalblurtwo {
+    background: radial-gradient(ellipse at center, rgba(153, 78, 188) 25%, rgba(153, 78, 188, 0.2) 25%, rgba(153, 78, 188, 0) 100%);
+    filter: blur(100px);
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 10;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  } */
+
+  .ovalblurtwo {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: radial-gradient(ellipse at center, rgba(102, 246, 255) 4%, rgba(102, 246, 255,0.2) 25%, rgba(102, 246, 255,0) 100%);
+    filter: blur(100px);
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  

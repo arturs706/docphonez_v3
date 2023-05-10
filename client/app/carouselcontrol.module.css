@@ -1,0 +1,26 @@
+/* CSS */
+.carouselcontroller {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .carouselimage {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .carousel-image-enabled:hover {
+    opacity: 0.8;
+  }
+  
+  .carousel-image-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .carousel-image-enabled {
+    cursor: pointer;
+  }
+

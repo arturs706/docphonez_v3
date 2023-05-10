@@ -1,0 +1,732 @@
+.cartmain {
+  width: 100%;
+  height: 135vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-font-color);
+  background-color: var(--main-color);
+  align-items: center;
+  padding-top: 1.6rem;
+
+}
+.cartmainloader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-font-color);
+  background-color: var(--main-color);
+  align-items: center;
+  padding-top: 1.6rem;
+  justify-content: center;
+}
+.backbutton {
+  border: 2px solid white;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-font-color);
+  margin: 1rem;
+  min-width: 5rem;
+  z-index: 4;
+  position: relative;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.backbutton h3{
+  display: flex;
+  margin-left: 0.35rem;
+}
+
+.backbutton:active {
+  transform: scale(0.95);
+}
+
+
+.cartmainnoprod {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-font-color);
+  background-color: var(--main-color);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+
+}
+.cartmainnoprod h3{
+  font-weight: 300;
+}
+
+.top{
+  width: 100%;
+  height: 14%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 3.2rem;
+  flex-direction: column;
+  max-width: 1440px;
+}
+
+.wrapp {
+  display: flex;
+  width: 12rem;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.wrapp img {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.links {
+  display: flex;
+  
+}
+.checkoutpg {
+  color: var(--main-font-faded);
+
+}
+
+.top h1 {
+  font-size: 2rem;
+}
+.divwrapper {
+  width: 100%;
+  height: 94%;
+  display: flex;
+  max-width: 1440px;
+
+}
+
+.divleft {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+
+}
+
+.stepper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 3rem;
+  padding-top: 3rem;
+
+}
+.imgwrap {
+  display: flex;
+  flex-direction: column;
+  
+}
+.nameof {
+  padding-top: 1rem;
+}
+.nameoftow {
+  padding-top: 1rem;
+  color: var(--main-font-faded);
+
+  
+}
+.nameofthree {
+  padding-top: 1rem;
+  color: var(--main-font-faded);
+  position: relative;
+  right: 0.9rem;
+}
+.cartpage h2 {
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  
+}
+.cartpage label {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+
+}
+.forminputs {
+  display: flex;
+  flex-direction: column;
+}
+.forminputs input {
+  height: 2rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  width: 12rem;
+  color: var(--main-font-color);
+  
+}
+
+.frminputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 33rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+}
+.btn {
+  padding: 0.92rem;
+  margin-top: 6.94rem;
+  margin-left: 3rem;
+  width: 27rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: linear-gradient(to bottom right, #66F6FF, #143DA9);
+  color: var(--main-font-color);
+  cursor: pointer;
+  order: 1;
+  margin-top: auto;
+
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+
+.divright {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.tiyle {
+  padding-bottom: 2rem;
+}
+.productwrapp {
+  overflow: auto;
+}
+.productwrapp::-webkit-scrollbar {
+  display: none;
+}
+.total {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.binwrapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2.9rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.binwrapp img {
+
+  cursor: pointer;
+}
+.binwrapp img:active {
+  transform: scale(0.95);
+}
+
+.itemqtywrap {
+  display: flex;
+  flex-direction: row;
+  width: 6rem;
+  justify-content: space-between;
+  padding: 1.4rem 0rem;
+  align-items: center;
+  
+
+}
+.discountcode {
+  flex-direction: column;
+  min-height: 13rem;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+
+}
+.discountcode input {
+  height: 3rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  border: 0.4px solid #aaa7a74d;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  color: var(--main-font-color);
+  width: 70%;
+  margin-bottom: 1rem;
+
+}
+.discountcode button {
+  border: 2px solid white;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-font-color);
+  width: 5rem;
+}
+.discountcode button:active {
+  transform: scale(0.95);
+}
+
+.discountcode h4 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  color: var(--main-font-color);
+  font-weight: 300;
+}
+
+
+.discountmessage {
+  font-size: 0.8rem;
+  color: var(--main-font-color);
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.discounterrormessage {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  color: red;
+  padding-top: 2rem;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 2.9rem;
+  
+}
+.addremoveitm {
+  border: 1px solid var(--main-font-faded);
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-font-color);
+}
+.addremoveitm:active {
+  transform: scale(0.95);
+}
+.totalline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2.9rem;
+  padding-top: 1rem;
+}
+.btntwo {
+  display: none;
+}
+.btntwo img {
+  display: none;
+}
+.btnthree {
+  padding: 0.75rem;
+  margin-top: 2rem;
+  width: 70%;
+  border: 1px solid var(--main-font-faded);
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  margin-top: auto;
+  
+}
+.btnthree img {
+  margin-right: 1rem;
+}
+
+.ovalblur {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  background: radial-gradient(ellipse at right, rgba(102, 246, 255) 15%, rgba(102, 246, 255,0.2) 15%, rgba(102, 246, 255,0) 100%);
+  filter: blur(100px);
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.divright .btn {
+  display: none;
+  
+}
+.divleftsmallsize {
+  display: none;
+}
+
+.errormessage {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  text-align: center;
+  width: 27rem;
+}
+.errorwrapplrg {
+  display: none;
+}
+.divblockdiscs {
+  width: 10.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.divblockdiscs h3:nth-child(2){
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--main-font-faded);
+  text-decoration: line-through;
+}
+.divblockdiscstwo {
+  width: 10.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.divblockdiscstwo h3:nth-child(2){
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--main-font-faded);
+  text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 990px) {
+  .divleftsmallsize {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .errormessage {
+
+    margin-left: 0rem;
+
+  }
+  .errorwrapplrg {
+    display: block;
+  }
+ 
+  .discountcodesmal{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+
+  }
+  .discountcodesmal input {
+    height: 3rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    border: 0.4px solid #aaa7a74d;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    color: var(--main-font-color);
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+  }
+.discountcodesmal button {
+  border: 2px solid white;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-font-color);
+  width: 5rem;
+  
+}
+.discountcodesmal h4 {
+  font-size: 1rem;
+  color: var(--main-font-color);
+  font-weight: 300;
+}
+
+  .btntwo {
+    padding: 0.75rem;
+    margin-top: 2rem;
+    width: 70%;
+    border: 1px solid var(--main-font-faded);
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .btntwo img {
+    margin-right: 1rem;
+    display: block;
+  }
+  .btnthree {
+    display: none;
+  }
+  .btnthree img {
+    display: none;
+  }
+  .top {
+    height: 30vh;
+  }
+  
+
+
+
+  .divright .btn {
+    display: block;
+    margin-top: 3rem;
+    width: 70%;
+    margin-left: 0;
+
+  }
+ 
+  .cartmain {
+    height: fit-content;
+    padding-top: 0.15rem;
+
+  }
+  .divleft {
+    display: none;
+  }
+  .divright {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .divright .btn{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btntwo {
+    width: 100%;
+  }
+
+  .totalline {
+    padding-right: 0.5rem;
+
+  }
+
+  .tiyle {
+    padding-bottom: 2rem;
+    padding-left: 3.2rem;
+    padding-top: 2rem;
+  }
+  .productwrapp {
+    padding-left: 3.2rem;
+    width: 34.5rem;
+
+  }
+  .total {
+    width: 29rem;
+    padding-left: 0.5rem;
+  }
+  .binwrapp {
+    padding-right: 3.3rem; 
+  }
+  .quantity {
+    padding-right: 3.3rem;
+  }
+  .cartpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .frminputs {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+  .forminputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .frminputs input{
+    width: 13.2rem;
+  }
+  
+
+}
+@media screen and (max-width: 600px) {
+  .frminputs input {
+    width: 12rem;
+  }
+  .frminputs {
+    padding: 0.75rem 1rem;
+  }
+  .productwrapp {
+    padding-left: 3.2rem;
+    width: 33rem;
+
+  }
+  .total {
+    width: 27.2rem;
+  }
+
+}
+@media screen and (max-width: 550px) {
+  .frminputs input {
+    width: 12rem;
+  }
+  .frminputs {
+    padding: 0.75rem 2.9rem;
+  }
+  .productwrapp {
+    padding-left: 3.2rem;
+    width: 31.5rem;
+
+  }
+  .total {
+    width: 96%;
+    max-width: 26.2rem;
+
+  }
+}
+
+
+@media screen and (max-width: 475px) {
+  .frminputs {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0.75rem 0rem;
+
+  }
+  .frminputs input {
+    min-width: 22.4rem;
+    padding-left: 0rem;
+    margin-right: 0.9rem;
+
+  }
+  .divright .btn{
+    width: 98%;
+
+  }
+  .discountcodesmal input {
+    width: 98%;
+    
+  }
+
+  .frminputs label {
+    padding-top: 0.5rem;
+  }
+  .divleft h2 {
+    text-align: center;
+  }
+  .stepper {
+    display: none;
+  }
+  .cartpage h2 {
+    margin-top: 0;
+    padding-top: 0;
+    
+  }
+  .cartpage:nth-child(3) h2 {
+    margin-top: 2rem;
+    
+  }
+  .top {
+    padding-left: 1.5rem;
+    height: 30vh;
+
+  }
+  .wrapp {
+    width: 14.2rem;
+  }
+
+  .fxqfrminputs {
+    padding: 0.75rem 0rem;
+
+  }
+  .total {
+    width: 89%;
+    margin-right: 0.7rem;
+
+    
+  }
+  .tiyle {
+    padding-right: 4rem;
+    
+  }
+  .productwrapp {
+    min-height: 18%;
+    width: 99%;
+    padding: 0rem;
+    padding-left: 2.4rem;
+  }
+  .btntwo {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .frminputs input {
+    min-width: 23rem;
+    padding-left: 0rem;
+    margin-right: 0.9rem;
+  }
+  .productwrapp {
+    width: 100%;
+    padding-left: 1.3rem;
+
+  }
+  .binwrapp {
+    padding-right: 2.2rem;
+  }
+  .quantity {
+    padding-right: 2.2rem;
+  }
+}

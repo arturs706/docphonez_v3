@@ -1,0 +1,22 @@
+.dotscontainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    transform: translateY(-5px);
+    flex-direction: row;
+  }
+  
+  .dot {
+    height: 0.7rem;
+    width: 4rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(240, 248, 255);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .selected {
+    opacity: 1;
+  }
+  

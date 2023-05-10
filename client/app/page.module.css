@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--main-color);
+  color: var(--main-font-color);
+  width: 100%;
+}
+.sections {
+  opacity: 0;
+}

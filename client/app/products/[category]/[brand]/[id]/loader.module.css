@@ -1,0 +1,31 @@
+.loader {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dot {
+    
+    width: 1rem;
+    height: 5px;
+    background-color: #fff;
+    margin: 1px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+  }
+
+  .dot span {
+
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8px;
+    opacity: 0;
+    transform: scale(0);
+  }

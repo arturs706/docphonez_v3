@@ -1,0 +1,111 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--main-color);
+  color: var(--main-font-color);
+}
+.ovalblurdyn {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  background: radial-gradient(ellipse at right, rgba(102, 246, 255) 15%, rgba(102, 246, 255,0.2) 15%, rgba(102, 246, 255,0) 100%);
+  filter: blur(100px);
+  z-index: 1;
+}
+.divwrap {
+  margin-left: 3.2rem;
+  font-weight: 300;
+  padding-right: 3.2rem;
+  width: 40rem;
+}
+
+
+.main h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--main-font-color);
+  text-align: center;
+}
+.paragraph{
+  padding-bottom: 2rem;
+}
+.paragraph h3{
+  display: inline;
+}
+.paragraph span{
+  display: inline;
+}
+.imagewrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+.samsungwrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.microsoftwrapp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0rem;
+}
+
+
+
+@media screen and (max-width: 692px) {
+  .divwrap {
+    width: 94%;
+  }
+  .main h1:nth-child(1) {
+    font-size: 2rem;
+  }
+  .imagewrapper {
+    width: 100%;
+  }
+  .imagewrapper img:nth-child(1) {
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .divwrap {
+    width: 93%;
+  }
+  .main h1:nth-child(1) {
+    font-size: 1.8rem;
+  }
+  .imagewrapper img:nth-child(1) {
+    padding-right: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .divwrap {
+    width: 93%;
+  }
+  .main h1:nth-child(1) {
+    font-size: 1.8rem;
+  }
+  .imagewrapper img:nth-child(1) {
+    padding-right: 0.4rem;
+  }
+}
+@media screen and (max-width: 429px) {
+  .divwrap {
+    width: 93%;
+    margin-left: 1.4rem;
+  }
+  .main h1:nth-child(1) {
+    font-size: 1.6rem;
+  }
+  .imagewrapper img:nth-child(1) {
+    padding-right: 0.4rem;
+  }
+}

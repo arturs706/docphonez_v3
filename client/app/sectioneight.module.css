@@ -1,0 +1,123 @@
+.sectioneight {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .sectioneightfirstdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 55%;
+    margin-bottom: 2rem;
+  }
+  .sectioneightfirstdiv h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  .sectioneightdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    width : 100%;
+    height : 40.6%;
+    z-index: 1;
+    min-width: 400px;  
+    margin: 0rem 0rem;
+    margin-bottom: 2rem;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  .logodiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+  }
+  .sectioneightfirstdiv img {
+    opacity: 90%;
+  }
+  .logodiv img {
+    opacity: 50%;
+  }
+  
+  .logodivsmall img {
+    display: none;
+  }
+  
+  @media screen and (max-width: 740px) {
+    .logodiv img{
+      display: none;
+    }
+    .logodivsmall {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+    }
+    .logodiv{
+      display: none;
+    }
+    .logodivsmall img {
+      display: block;
+      opacity: 50%;
+    }
+  }
+  
+  
+  .ovalblurthree {
+    background: radial-gradient(ellipse at center, rgba(102, 246, 255) 4%, rgba(102, 246, 255,0.2) 25%, rgba(102, 246, 255,0) 100%);
+    filter: blur(100px);
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 10;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .sectioneightfirstdiv h1 {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 603px) {
+    .sectioneightfirstdiv h1 {
+      font-size: 2.2rem;
+    }
+    .sectioneightdiv {
+      height: 51.3%;
+    }
+    .sectioneightfirstdiv {
+      height: 44%;
+    }
+  }
+  
+  @media screen and (max-width: 564px) {
+    .sectioneightfirstdiv h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+
+  }

@@ -1,0 +1,89 @@
+
+.nav-icon-1{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  transition: .1s;
+  margin: 1.5rem 1.5rem;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 7;
+}
+.nav-icon-1 span{
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+
+}
+.nav-icon-1:hover span{
+  transform: scale(1.2);
+  transition: 760ms cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-1 span:nth-child(1){
+  left: 0;
+  top: 0;
+}
+.nav-icon-1 span:nth-child(2){
+  left: 10.5px;
+  top: 0;
+}
+.nav-icon-1 span:nth-child(3){
+  right: 0;
+  top: 0;
+}
+.nav-icon-1 span:nth-child(4){
+  left: 0;
+  top: 10.5px;
+}
+.nav-icon-1 span:nth-child(5){
+  position: absolute;
+  left: 10.5px;
+  top: 10.5px;
+}
+.nav-icon-1 span:nth-child(6){
+  right: 0px;
+  top: 10.5px;
+}
+.nav-icon-1 span:nth-child(7){
+  left: 0px;
+  bottom: 0px;
+}
+.nav-icon-1 span:nth-child(8){
+  position: absolute;
+  left: 10.5px;
+  bottom: 0px;
+}
+.nav-icon-1 span:nth-child(9){
+  right: 0px;
+  bottom: 0px;
+}
+.nav-icon-1.open{
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: .6s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-1.open span{
+  border-radius: 50%;
+  transition-delay: 200ms;
+  transition: .8s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-1.open span:nth-child(2) {
+  left: 5.5px;
+  top: 5.5px;
+}
+.nav-icon-1.open span:nth-child(4) {
+  left: 5.5px;
+  top: 16px;
+}
+.nav-icon-1.open span:nth-child(6) {
+  right: 5.5px;
+  top: 5.5px;
+}
+.nav-icon-1.open span:nth-child(8) {
+  left: 16px;
+  bottom: 5.5px;
+}
+
