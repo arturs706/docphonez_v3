@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "i": "^0.3.7",
-    "npm": "^9.6.5",
+    "npm": "^10.2.2",
     "react-geocode": "^0.2.3"
   }
 }
