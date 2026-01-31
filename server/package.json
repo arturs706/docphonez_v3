@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.0",
+    "bcrypt": "^6.0.0",
     "cloudinary": "^1.36.1",
     "connect-pg-simple": "^8.0.0",
     "cookie-parser": "^1.4.6",
